@@ -1,0 +1,25 @@
+transport:
+  http:
+    host: localhost
+    port: 8081
+    timeouts:
+      read: 10s
+      write: 10s
+    maxHeaderMegabytes: 2
+
+api:
+  scheme: http
+  host: localhost:8081
+  swaggerEnabled: true
+
+sso:
+  url: https://smass-keycloak.dev.aragorn.xyz
+  realm: ucp
+
+storage:
+  postgres:
+    host: localhost
+    port: 5439
+    dbName: learning
+    user: amir1isaev
+    sslMode: disable
